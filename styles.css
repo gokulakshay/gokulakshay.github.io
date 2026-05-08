@@ -401,6 +401,43 @@ pre { padding: 20px; overflow-x: auto; }
   background: rgba(157,78,221,0.08);
 }
 
+/* AI category highlight */
+.skill-category--ai {
+  border-color: rgba(247, 37, 133, 0.3);
+  background: linear-gradient(135deg, rgba(157,78,221,0.05), rgba(247,37,133,0.05));
+  grid-column: span 3;
+}
+.skill-category--ai:hover { border-color: var(--accent2); }
+.skill-category--ai h3 {
+  background: var(--grad2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.skill-tag--ai {
+  border-color: rgba(247,37,133,0.25) !important;
+  color: #f72585 !important;
+  background: rgba(247,37,133,0.06) !important;
+}
+.skill-tag--ai:hover {
+  border-color: var(--accent2) !important;
+  background: rgba(247,37,133,0.15) !important;
+}
+
+.ai-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 28px;
+  padding: 20px 24px;
+  background: linear-gradient(135deg, rgba(157,78,221,0.07), rgba(247,37,133,0.07));
+  border: 1px solid rgba(247,37,133,0.2);
+  border-radius: var(--radius);
+}
+.ai-callout-icon { font-size: 24px; flex-shrink: 0; }
+.ai-callout p { color: var(--text-dim); font-size: 15px; line-height: 1.6; }
+.ai-callout strong { color: var(--text); }
+
 /* ===== TIMELINE (education + experience) ===== */
 #education { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 
@@ -630,6 +667,7 @@ footer {
   .about-grid { grid-template-columns: 1fr; }
   .about-img-wrap { justify-content: flex-start; }
   .skills-wrapper { grid-template-columns: repeat(2, 1fr); }
+  .skill-category--ai { grid-column: span 2; }
   .projects-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-layout { grid-template-columns: 1fr; }
 }
@@ -649,6 +687,7 @@ footer {
   }
   .nav-toggle { display: flex; }
   .skills-wrapper { grid-template-columns: 1fr; }
+  .skill-category--ai { grid-column: span 1; }
   .projects-grid { grid-template-columns: 1fr; }
   .about-img-ring { width: 160px; height: 160px; }
 }
