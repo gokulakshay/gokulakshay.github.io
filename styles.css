@@ -500,6 +500,11 @@ pre { padding: 20px; overflow-x: auto; }
   margin-bottom: 10px;
 }
 .tl-body p { color: var(--text-dim); font-size: 14px; }
+.tl-tenure { font-size: 13px; font-weight: 400; color: var(--text-muted); }
+.tl-roles { display: flex; flex-direction: column; gap: 10px; margin: 12px 0; }
+.tl-role { display: flex; flex-direction: column; gap: 2px; padding-left: 12px; border-left: 2px solid var(--border); }
+.tl-role-title { font-size: 14px; font-weight: 600; color: var(--text); }
+
 .tl-list { margin-top: 8px; }
 .tl-list li {
   color: var(--text-dim);
