@@ -575,6 +575,50 @@ pre { padding: 20px; overflow-x: auto; }
   border: 1px solid rgba(76,201,240,0.2);
 }
 
+/* ===== GITHUB ACTIVITY ===== */
+#github { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+.github-stats { display: flex; flex-direction: column; gap: 24px; }
+
+.github-graph {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  overflow-x: auto;
+}
+
+.contrib-graph {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  filter: brightness(1.1);
+}
+
+.github-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.gh-card {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  display: block;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.gh-card:hover { border-color: var(--accent1); transform: translateY(-4px); }
+
+.github-cta { text-align: center; margin-top: 36px; }
+
+@media (max-width: 640px) {
+  .github-cards { grid-template-columns: 1fr; }
+}
+
 /* ===== CONTACT ===== */
 #contact { background: var(--bg2); border-top: 1px solid var(--border); }
 
